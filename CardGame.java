@@ -1,4 +1,8 @@
-package cardGame;
+//Kanemoto
+//June 18, 2025
+//Card game with OOP
+
+//package cardGame;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -7,9 +11,9 @@ import java.util.Scanner;
 
 public class CardGame {
 
+	//these are the data strcutures to hold our cards
 	private static ArrayList<Card> deckOfCards = new ArrayList<Card>();
 	private static ArrayList<Card> playerCards = new ArrayList<Card>();
-
 
 	public static void main(String[] args) {
 
@@ -22,6 +26,7 @@ public class CardGame {
 			e.printStackTrace();
 		}
 
+		//read the cards from the file
 		while(input.hasNext()) {
 			String[] fields  = input.nextLine().split(",");
 			//	public Card(String cardSuit, String cardName, int cardValue, String cardPicture) {
